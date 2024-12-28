@@ -40,18 +40,17 @@
  # Update the role with the modified trust policy
  ```bash
 aws iam update-assume-role-policy --role-name $role_name --policy-document "$TRUST_POLICY"
-    ```
-### Step 4:  Create Service account
+ ```
+# Step 4:  Create Service account
 
 ```bash
 eksctl create iamserviceaccount --name <SERVICE_ACCOUNT_NAME> --namespace kube-system --cluster CLUSTER_NAME --attach-policy-arn <IAM_POLICY_ARN> --approve --region < >
-    ```
+   ```
 change the service_account_name, cluster_name, IAM_POLICY_ARN & region
 
  ```bash
   kubectl api-versions | grep rbac.authorization.k8s.io
-
-   ```
+ ```
 
 ### Step 5: 
 
