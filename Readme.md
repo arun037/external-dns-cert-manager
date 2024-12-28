@@ -93,3 +93,4 @@ install nginx-ingress using helm
 kubectl logs external-dns-9f85d8d5b-sx5fg -n kube-system
  ```
 
+                                                        #THANK_YOU
